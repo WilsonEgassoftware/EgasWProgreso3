@@ -1,24 +1,32 @@
-﻿namespace EgasWProgreso3
+﻿using System.Threading.Tasks;
+
+namespace EgasWProgreso3
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
-        public MainPage()
+        private async Task OnCounterClicked(object sender, EventArgs e)
         {
-            InitializeComponent();
+            string texto = "¡Hola. Binevenido a la pagina de recetas";
+            await GuardarDatos( texto);
+            await ConfirmarDatos("Información", texto, "Aceptar");
+
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async Task ConfirmarDatos(string v1, string texto, string v2)
         {
-            count++;
+            throw new NotImplementedException();
+        }
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        private async Task GuardarDatos(string texto)
+        {
+            throw new NotImplementedException();
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private async void ObtenerInfodeGustos(object sender, EventArgs e)
+        {
+            // Aquí puedes manejar el evento del botón para obtener información de gustos
+            // Por ejemplo, mostrar un mensaje o realizar una acción específica
+            await DisplayAlert("Información", "Botón de obtener información de gustos presionado", "Aceptar");
         }
     }
 

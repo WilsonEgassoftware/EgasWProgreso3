@@ -8,13 +8,17 @@
             Padding="30,0"
             Spacing="25">
             <Image
-                Source="dotnet_bot.png"
+                Source="recetas.jpg"
                 HeightRequest="185"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="Las mejores recetas" />
 
             <Label
-                Text="Hello, World!"
+                Text="Bienvenido A CREAR algo nuevo!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <Label
+                 Text="Ingresa tu nombre!"
                 Style="{StaticResource Headline}"
                 SemanticProperties.HeadingLevel="Level1" />
 
@@ -25,11 +29,14 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="Finalizar"
+                Text="Guardar" 
+                Clicked="Confirmar Datos"
                 HorizontalOptions="Fill" />
+            <Button
+             Text="confirmar"
+              Clicked="OnCounterClicked"
+              HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

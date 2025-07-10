@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EgasWProgreso3.Vista.EleccióndeComida"
+             Title="EleccióndeComida">
+    <VerticalStackLayout>
+        <Label 
+            Text="Eligue la receta de hoy!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+         Text="Las recetas se enlistaran depende tus gustos!"
+         VerticalOptions="Center" 
+         HorizontalOptions="Center" />
+        <Button
+         Text="confirmar"
+         Clicked="Guardar Datos"
+        HorizontalOptions="Fill" />
+        <Button
+         Text="Ver recetas"
+         Clicked="VerRecetas"
+         HorizontalOptions="Fill" />
+
+        <Label
+            Text="Si erese vegano escoge el solo la ensalada"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+         />
+        <Button
+         Text="Ensalada"
+         Clicked="VerEnsalada"
+         HorizontalOptions="Fill" />
+    </VerticalStackLayout>
+</ContentPage>

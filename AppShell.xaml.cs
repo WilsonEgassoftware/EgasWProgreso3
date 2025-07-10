@@ -1,10 +1,16 @@
-﻿namespace EgasWProgreso3
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace EgasWProgreso3
 {
-    public partial class AppShell : Shell
+    public partial class  MainPage
     {
-        public AppShell()
+        public string Confirmar { get; set; }
+        public string Esvegetariana { get; set; }
+        public MainPage()
         {
-            InitializeComponent();
+            throw new NotImplementedException();
+            Confirmar = "Confirmar";
+            Esvegetariana = "Es vegetariana";
         }
     }
 }
