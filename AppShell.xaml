@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="EgasWProgreso3.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:EgasWProgreso3"
+    Shell.FlyoutBehavior="Disabled"
+    Title="EgasWProgreso3">
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+     <FlyoutItem
+        Title="Settings"
+        Icon="settings.png"
+        Route="SettingsPage">
+    <ShellContent
+            ContentTemplate="{DataTemplate local:SettingsPage}"
+            Route="SettingsPage" />
+</Shell>
